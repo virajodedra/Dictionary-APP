@@ -14,8 +14,8 @@ const dictionary = async(word) => {
         .then((response) => {
     
             wordMain.innerHTML = "Meaning of : " + response.word;
-            define.innerHTML = response.define;
-            // defination.innerHTML = response.defination.replace("2.", "<br>2.").replace("3.", "<br>3.").replace("4.", "<br>4.");
+            define.innerHTML = response.definition;
+            defination.innerHTML = response.defination.replace("2.", "<br>2.").replace("3.", "<br>3.").replace("4.", "<br>4.");
         });
     }catch (error) {
         console.log('Error:', error);
